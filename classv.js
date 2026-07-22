@@ -2,7 +2,7 @@
  export const classv = [
     {  id:1,
         name: "John Doe",
-        whatsapp: "+916002976805",
+        whatsapp: "+916002471235",
         phone: "+916002976805",
       
      
