@@ -1,6 +1,6 @@
 ﻿import { classv } from './classv.js';
 import { classiv } from './classiv.js';
-import { info } from './info.js';
+// import { info } from './info.js';
 
 const searchInput = document.getElementById('searchInput');
 const passwordInput = document.getElementById('password');
@@ -23,7 +23,7 @@ function renderStudents(students) {
         const whatsappLink = row.querySelector('.whatsapp-link');
         whatsappLink.addEventListener('click', (event) => {
             event.preventDefault();
-            window.sendwhatsapp(student.whatsapp, student.name, info.msg);
+            window.sendwhatsapp(student.whatsapp, student.name);
         });
 
         resultTable.appendChild(row);
