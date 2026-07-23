@@ -25,12 +25,12 @@ function openWhatsApp(number, text) {
 
 
 
-function sendWhatsAppToBoth(studentPhone, studentName, messageText='Dear Parent, today ${studentName} you child is absent, so we like to know the reason' ) {
+function sendWhatsAppToBoth(studentPhone, studentName ) {
   const cleanStudentPhone = normalizePhone(studentPhone);
   const cleanPrincipalPhone = normalizePhone(PRINCIPAL_PHONE);
   const safeStudentName = String(studentName || 'student').replace(/\s+/g, ' ').trim();
-  const msgForPrincipal = encodeURIComponent(`${code} Absent alert sent for ${safeStudentName}.`);
-  const msgForStudent = encodeURIComponent(messageText);
+  const msgForPrincipal = encodeURIComponent(`${code} :Absent alert sent for ${safeStudentName}.`);
+  const msgForStudent = encodeURIComponent(`${code}: Dear parent, ${safeStudentName} School aha nai.Kio aha nai aji?`);
 
   openWhatsApp(cleanStudentPhone, msgForStudent);
 
