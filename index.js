@@ -2,6 +2,52 @@
 import { classiv } from './classiv.js';
 // import { info } from './info.js';
 
+
+const pass='vsa';
+
+//teacher info
+const searchtaecher=document.getElementById('searchteacher');
+
+const passwordteacher=document.getElementById('passwordteacher');
+
+
+
+//to open page
+const element = document.querySelector('.box');
+const elementtwo=document.querySelector('.loginbox');
+const verifybutton=document.getElementById('verify');
+
+verifybutton.addEventListener('click', function(){
+    const enterv=passwordteacher.value;
+    const nam=searchtaecher.value;
+    console.log(nam)
+if(enterv==pass){
+
+const teachername=document.getElementById('teachername')
+
+element.classList.remove('main');
+elementtwo.classList.add('new');
+teachername.textContent=`Welcome ${nam}`;
+
+
+}else{
+    alert('You are not Authorised to use this System.')
+}
+
+
+
+})
+
+// end
+
+
+
+
+
+
+
+
+
 const searchInput = document.getElementById('searchInput');
 const passwordInput = document.getElementById('password');
 const searchButton = document.getElementById('searchButton');
@@ -23,7 +69,7 @@ function renderStudents(students) {
         const whatsappLink = row.querySelector('.whatsapp-link');
         whatsappLink.addEventListener('click', (event) => {
             event.preventDefault();
-            window.sendwhatsapp(student.whatsapp, student.name);
+            window.sendwhatsapp(student.whatsapp, student.name,student.class);
         });
 
         resultTable.appendChild(row);

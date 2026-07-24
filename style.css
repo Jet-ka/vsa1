@@ -80,3 +80,25 @@ body{
     align-items: center;
     flex-direction: column;
 }
+
+.main{
+    display:none;
+}
+
+
+.loginbox{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.new{
+    display: none;
+}
+
+.loginbox>img{
+    margin-bottom: 20px;
+    width:100px;
+    border-radius:50%;
+}

@@ -25,12 +25,12 @@ function openWhatsApp(number, text) {
 
 
 
-function sendWhatsAppToBoth(studentPhone, studentName ) {
+function sendWhatsAppToBoth(studentPhone, studentName,classname ) {
   const cleanStudentPhone = normalizePhone(studentPhone);
   const cleanPrincipalPhone = normalizePhone(PRINCIPAL_PHONE);
   const safeStudentName = String(studentName || 'student').replace(/\s+/g, ' ').trim();
-  const msgForPrincipal = encodeURIComponent(`${code} :Absent alert sent for ${safeStudentName}.`);
-  const msgForStudent = encodeURIComponent(`${code}: Dear parent, ${safeStudentName} School aha nai.Kio aha nai aji?`);
+  const msgForPrincipal = encodeURIComponent(`${code} :Absent alert sent for ${safeStudentName} of ${classname}`);
+  const msgForStudent = encodeURIComponent(`${code}: Dear parent, ${safeStudentName} School aha nai.Kio aha nai aji amak jonabo?`);
 
   openWhatsApp(cleanStudentPhone, msgForStudent);
 
@@ -39,8 +39,8 @@ function sendWhatsAppToBoth(studentPhone, studentName ) {
   openWhatsApp(cleanPrincipalPhone, msgForPrincipal);
 }
 
-function sendwhatsapp(studentPhone, studentName, messageText) {
-  sendWhatsAppToBoth(studentPhone, studentName, messageText);
+function sendwhatsapp(studentPhone, studentName, classname) {
+  sendWhatsAppToBoth(studentPhone, studentName, classname);
 }
 
 window.sendWhatsAppToBoth = sendWhatsAppToBoth;

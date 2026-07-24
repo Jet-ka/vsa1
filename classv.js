@@ -4,6 +4,7 @@
         name: "John Doe",
         whatsapp: "+916002471235",
         phone: "+916002976805",
+        class:'5'
       
      
         
