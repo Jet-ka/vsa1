@@ -1,5 +1,6 @@
 ﻿import { classv } from './classv.js';
 import { classiv } from './classiv.js';
+import {classnursery} from './classnursery.js';
 // import { info } from './info.js';
 
 
@@ -20,7 +21,7 @@ const verifybutton=document.getElementById('verify');
 verifybutton.addEventListener('click', function(){
     const enterv=passwordteacher.value;
     const nam=searchtaecher.value;
-    console.log(nam)
+  //  console.log(nam)
 if(enterv==pass){
 
 const teachername=document.getElementById('teachername')
@@ -89,7 +90,12 @@ searchButton.addEventListener('click', () => {
         renderStudents(classv);
     } else if (searchValue === 4) {
         renderStudents(classiv);
-    } else {
+    } else if(searchValue== -1){
+        renderStudents(classnursery)
+    }
+    
+    
+    else {
         alert('No data found');
     }
 });
