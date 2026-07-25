@@ -22,7 +22,7 @@ verifybutton.addEventListener('click', function(){
     const enterv=passwordteacher.value;
     const nam=searchtaecher.value;
     if(nam==''){
-        alert('Place you name');
+        alert('Apunar nam tu type korok..');
         return
     }
   //  console.log(nam)
