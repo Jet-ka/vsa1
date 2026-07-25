@@ -21,6 +21,10 @@ const verifybutton=document.getElementById('verify');
 verifybutton.addEventListener('click', function(){
     const enterv=passwordteacher.value;
     const nam=searchtaecher.value;
+    if(nam==''){
+        alert('Place you name');
+        return
+    }
   //  console.log(nam)
 if(enterv==pass){
 
