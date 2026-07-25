@@ -1,162 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivekananda Science Academy</title>
-    <link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vivekananda Science Academy attendance portal for teachers of the school. Secure and simple attendance management for authorized staff members."
+    />
+    <meta
+      name="keywords"
+      content="Vivekananda Science Academy, attendance, school attendance, teacher portal, school management"
+    />
+    <meta name="author" content="Vivekananda Science Academy" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0d6efd" />
+    <meta
+      property="og:title"
+      content="Vivekananda Science Academy Attendance Portal"
+    />
+    <meta
+      property="og:description"
+      content="Attendance management website for teachers of Vivekananda Science Academy."
+    />
+    <meta property="og:type" content="website" />
+    <title>Vivekananda Science Academy Attendance Portal</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="image/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-      
-</head>
-<body>
-
-<!--before starting-->
-<div class="loginbox  container ">
-   <img src="image/logo.jpg" alt="logo of VSA" >
-    <input class="form-control" type="text" id="searchteacher" placeholder="Enter your name" required>
-    <br>
-   <input class="form-control" type="password"  id="passwordteacher" placeholder="Enter Password" required>
-   <br>
-<button id="verify" class="btn btn-outline-info">Login</button>
-</div>
-
-
-
-<div class="box main">
-
-
-
-    <!--box1 start-->
-    <div class="box1">
-<h1>V.S.A</h1>
-<h5>School Attendance System</h5>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!--before starting-->
+    <div class="loginbox container">
+      <img src="image/logo.jpg" alt="logo of VSA" />
+      <input
+        class="form-control"
+        type="text"
+        id="searchteacher"
+        placeholder="Enter your name"
+        required
+      />
+      <br />
+      <input
+        class="form-control"
+        type="password"
+        id="passwordteacher"
+        placeholder="Enter Password"
+        required
+      />
+      <br />
+      <button id="verify" class="btn btn-outline-info">Login</button>
     </div>
 
-    <!--box1end-->
+    <div class="box main">
+      <!--box1 start-->
+      <div class="box1">
+        <h1>V.S.A</h1>
+        <h5>School Attendance System</h5>
+      </div>
 
-<!--box2  start-->
-<div class="box2">
-<br>
-  
-    
-    <div class="searchbox " >
-      <h5 id="teachername" style="text-align: center;"></h5>
-      <br><br>
-      <select class="form-select" id="searchInput" aria-label="Default select example" required>
-  <option selected>Select the Class</option>
-  <option value="-1">Nursery</option>
-  <option value="-2">L.K.G</option>
-  <option value="-3">U.K.G</option>
- 
-  <option value="1">ONE</option>
-  <option value="2">TWO</option>
-  <option value="3">THREE</option>
-  <option value="4">FOUR</option>
-  <option value="5">FIVE</option>
-    <option value="6">SIX</option>
-  <option value="9">NINE</option>
-  <option value="10">TEN</option>
-  <!-- <option value="4">FOUR</option>
+      <!--box1end-->
+
+      <!--box2  start-->
+      <div class="box2">
+        <br />
+
+        <div class="searchbox">
+          <h5 id="teachername" style="text-align: center"></h5>
+          <br /><br />
+          <select
+            class="form-select"
+            id="searchInput"
+            aria-label="Default select example"
+            required
+          >
+            <option selected>Select the Class</option>
+            <option value="-1">Nursery</option>
+            <option value="-2">L.K.G</option>
+            <option value="-3">U.K.G</option>
+
+            <option value="1">ONE</option>
+            <option value="2">TWO</option>
+            <option value="3">THREE</option>
+            <option value="4">FOUR</option>
+            <option value="5">FIVE</option>
+            <option value="6">SIX</option>
+            <option value="9">NINE</option>
+            <option value="10">TEN</option>
+            <!-- <option value="4">FOUR</option>
   <option value="5">FIVE</option> -->
+          </select>
+          <!-- <input class="form-control" type="number" id="searchInput" placeholder="Enter Class" required> -->
+          <br />
+          <input
+            class="form-control"
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+            required
+          />
+          <br />
 
-</select>
-    <!-- <input class="form-control" type="number" id="searchInput" placeholder="Enter Class" required> -->
-    <br>
-   <input class="form-control" type="password"  id="password" placeholder="Enter Password" required>
-   <br>
+          <button id="searchButton" class="btn btn-outline-info">Search</button>
+        </div>
+      </div>
+      <!--box2 end-->
 
- <button  id="searchButton" class="btn btn-outline-info" >Search</button>
+      <br /><br />
+      <!--box3 start-->
+      <div class="box3">
+        <div>
+          <h2 style="text-align: center">Students List</h2>
+        </div>
 
-       
-</div> 
-
-</div>
-<!--box2 end-->
-
-
-
-
-<br><br>
-<!--box3 start-->
-<div class="box3">
-<div>
-<h2 style="text-align: center;">Students List</h2>
-</div>
-
-    <div class="table-responsive resultbox w-100">
-    <table class="table table-bordered table-hover w-100">
-        <thead>
-            <tr>
+        <div class="table-responsive resultbox w-100">
+          <table class="table table-bordered table-hover w-100">
+            <thead>
+              <tr>
                 <th>Roll No.</th>
                 <th>Name</th>
                 <th>Call</th>
                 <th>WhatsApp</th>
-            </tr>
-        </thead>
-        <tbody id="resultTable"></tbody>
-    </table>
-</div>
+              </tr>
+            </thead>
+            <tbody id="resultTable"></tbody>
+          </table>
+        </div>
+      </div>
 
+      <!--box3 end-->
 
+      <br />
+      <br />
+      <!--box4 start-->
+      <div class="box4">
+        <div class="mgs">
+          <h5>PRINCIPAL</h5>
 
+          <button id="searchButton" class="btn btn-outline-info btn-lg">
+            <a
+              style="text-decoration: none"
+              href="http://wa.me/+916002976805?text=Number of Absent students:   out of:   of class:  due to: "
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bi bi-whatsapp">Report</i></a>
+            
+          </button>
+        </div>
+      </div>
+      <!--box4 end-->
 
-</div>
+      <br /><br />
+      <!--box5 start-->
+      <div class="box5">
+        <div class="marksheet">
+          <h5>Marksheet</h5>
 
-<!--box3 end-->
+          <button id="searchButton" class="btn btn-outline-info">
+            <a
+              style="text-decoration: none"
+              href="https://jet-ka.github.io/Markshit/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Click Me</a
+            >
+          </button>
+        </div>
+      </div>
 
-<br> <br>
-<!--box4 start-->
-<div class="box4">
-<div class="mgs">
-    <h5 >PRINCIPAL</h5>
-
- <button  id="searchButton" class="btn btn-outline-info btn-lg" >
-  <a style="text-decoration: none;" href="http://wa.me/+916002976805?text=Number of Absent students:   out of:   of class:  due to: " target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp">Report</i></a>
-
- </button>
-</div>
-
-</div>
-<!--box4 end-->
-
-<br><br>
-<!--box5 start-->
-<div class="box5">
-    <div class="marksheet">
-         <h5 >Marksheet</h5>
-
- <button  id="searchButton" class="btn btn-outline-info " >
-  <a style="text-decoration: none;" href="https://jet-ka.github.io/Markshit/" target="_blank" rel="noopener noreferrer">Click Me</a>
-
- </button>
+      <!--box5 end-->
+      <br />
+      <br />
     </div>
-</div>
+    <br /><br />
+    <!--box6 start-->
+    <div class="box6">
+      <h5 style="text-align: center">&copy;Jetlin Karkha&Co.:2026</h5>
+    </div>
+    <!--box6 end-->
+  </body>
 
-
-<!--box5 end-->
-<br>
-<br>
-
-
-
-</div>
-<br><br>
-<!--box6 start-->
-<div class="box6">
-<h5 style="text-align: center;">&copy;Jetlin Karkha&Co.:2026</h5>
-</div>
-<!--box6 end-->
-
-
-</body>
-    
-    <script type="module" src="index.js"></script>
-    <script src="msg.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-
+  <script type="module" src="index.js"></script>
+  <script src="msg.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
 </html>
