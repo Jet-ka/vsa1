@@ -1,0 +1,20 @@
+export const classv=[
+  {id: 1,name:"Parishmita ",phone:"+91 ",class:"5"},
+  {id: 2,name:"Riya ",phone:"+91 ",class:"5"},
+  {id: 3,name:"Jerina ",phone:"+91 ",class:"5"},
+  {id: 4,name:"Athirson ",phone:"+91 ",class:"5"},
+  {id: 5,name:"Noriaz ",phone:"+91 ",class:"5"},
+  {id: 6,name:"Prerana ",phone:"+91 ",class:"5"},
+  {id: 7,name:"Biraj ",phone:"+91 ",class:"5"},
+  {id: 8,name:"Nobya ",phone:"+91 ",class:"5"},
+  {id: 9,name:"Pallab ",phone:"+91 ",class:"5"},
+  {id: 10,name:"Arnab ",phone:"+91 ",class:"5"},
+  {id: 11,name:"Hirokjyoti ",phone:"+91 ",class:"5"},
+  {id: 12,name:"Disha ",phone:"+91 ",class:"5"},
+  {id: 13,name:"Roselyn ",phone:"+91 ",class:"5"},
+  {id: 14,name:"Satyajeet ",phone:"+91 ",class:"5"},
+  {id: 15,name:"Meghna ",phone:"+91 ",class:"5"},
+  {id: 16,name:"Priyangshi ",phone:"+91 ",class:"5"},
+  {id: 17,name:"Reva ",phone:"+91 ",class:"5"},
+
+]

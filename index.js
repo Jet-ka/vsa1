@@ -1,13 +1,31 @@
-﻿import { classv } from './classv.js';
-import { classiv } from './classiv.js';
-import {classnursery} from './classnursery.js';
+﻿import {classnursery} from './data/classnursery.js';
+import {classlkg} from './data/classlkg.js';
+import {classukg} from './data/classukg.js';
+
+import {classi} from './data/classi.js';
+import {classii} from './data/classii.js'
+import {classiii} from './data/classiii.js';
+import { classiv } from './data/classiv.js';
+import { classv } from './data/classv.js';
+import {classvi} from'./data/classvi.js';
+import {classix} from './data/classix.js';
+import {classx} from './data/classx.js';
+
+// for principal message by teachers 
+const codemgs=["a","b","c","d","e","f","g","h","i","j","k","l","m","n"];
+const randomnumber=Math.floor(Math.random()*14);
+const code=codemgs[randomnumber];
+
+
+
+
 // import { info } from './info.js';
 
 
 const pass='vsa';
 
 //teacher info
-const searchtaecher=document.getElementById('searchteacher');
+const searchteacher=document.getElementById('searchteacher');
 
 const passwordteacher=document.getElementById('passwordteacher');
 
@@ -20,10 +38,12 @@ const verifybutton=document.getElementById('verify');
 
 verifybutton.addEventListener('click', function(){
     const enterv=passwordteacher.value;
-    const nam=searchtaecher.value;
-    if(nam==''){
-        alert('Apunar nam tu type korok..');
-        return
+    const nam=searchteacher.value;
+    if(nam=='' ){
+     return   alert('Apunar nam tu type korok..');
+        
+    } else if(enterv==''){
+        return alert('Apunar Password tu diok')
     }
   //  console.log(nam)
 if(enterv==pass){
@@ -46,17 +66,11 @@ teachername.textContent=`Welcome ${nam}`;
 // end
 
 
-
-
-
-
-
-
-
 const searchInput = document.getElementById('searchInput');
 const passwordInput = document.getElementById('password');
 const searchButton = document.getElementById('searchButton');
 const resultTable = document.getElementById('resultTable');
+const anchor= document.getElementById('anchor');
 
 function renderStudents(students) {
     resultTable.innerHTML = '';
@@ -74,7 +88,7 @@ function renderStudents(students) {
         const whatsappLink = row.querySelector('.whatsapp-link');
         whatsappLink.addEventListener('click', (event) => {
             event.preventDefault();
-            window.sendwhatsapp(student.whatsapp, student.name,student.class);
+            window.sendwhatsapp(student.phone, student.name,student.class);
         });
 
         resultTable.appendChild(row);
@@ -89,17 +103,44 @@ searchButton.addEventListener('click', () => {
         alert('Incorrect password');
         return;
     }
-
-    if (searchValue === 5) {
-        renderStudents(classv);
-    } else if (searchValue === 4) {
-        renderStudents(classiv);
-    } else if(searchValue== -1){
-        renderStudents(classnursery)
+if(searchValue==-1){
+    renderStudents(classnursery)
+}
+    else if (searchValue === -2) {
+        renderStudents(classlkg);
+    } else if (searchValue === -3) {
+        renderStudents(classukg);
+    } else if(searchValue== 1){
+        renderStudents(classi)
+    }else if(searchValue==2){
+        renderStudents(classii)
+    }else if(searchValue==3){
+        renderStudents(classiii)
+    }else if(searchValue==4){
+        renderStudents(classiv)
+    }else if(searchValue==5){
+        renderStudents(classv)
+    }else if(searchValue==6){
+        renderStudents(classvi)
+    }else if(searchValue==9){
+        renderStudents(classix)
+    } else if(searchValue==10){
+        renderStudents(classx)
     }
     
     
     else {
         alert('No data found');
     }
+    if(searchValue==-1){
+     anchor.setAttribute("href",`http://wa.me/+916002976805?text=${code}[Class: Nursery]:Number of Absent students:   out of:  due to:`)   
+    }else if(searchValue==-2){
+        anchor.setAttribute("href",`http://wa.me/+916002976805?text=${code}[Class: L.K.G]:Number of Absent students:   out of:  due to:`)
+    }else if(searchValue==-3){
+        anchor.setAttribute("href",`http://wa.me/+916002976805?text=${code}[Class: U.K.G]:Number of Absent students:   out of:  due to:`)
+    }else{
+     anchor.setAttribute("href",`http://wa.me/+916002976805?text=${code}[Class: ${searchValue}]:Number of Absent students:   out of:  due to:`)
+
+    }
+
 });

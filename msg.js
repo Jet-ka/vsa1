@@ -1,8 +1,9 @@
 ﻿const PRINCIPAL_PHONE = '+919365776440';
 
-const codemgs=["a","b","c"];
-const randomnumber=Math.floor(Math.random()*3);
+const codemgs=["a","b","c","d","e","f","g","h","i","j","k","l","m","n"];
+const randomnumber=Math.floor(Math.random()*14);
 const code=codemgs[randomnumber];
+
 
 
 
@@ -29,8 +30,8 @@ function sendWhatsAppToBoth(studentPhone, studentName,classname ) {
   const cleanStudentPhone = normalizePhone(studentPhone);
   const cleanPrincipalPhone = normalizePhone(PRINCIPAL_PHONE);
   const safeStudentName = String(studentName || 'student').replace(/\s+/g, ' ').trim();
-  const msgForPrincipal = encodeURIComponent(`${code} :Absent alert sent for ${safeStudentName} of ${classname}`);
-  const msgForStudent = encodeURIComponent(`${code}: Dear parent, ${safeStudentName} School aha nai.Kio aha nai aji amak jonabo?`);
+  const msgForPrincipal = encodeURIComponent(`[${code}] :Absent alert sent for ${safeStudentName} of ${classname}`);
+  const msgForStudent = encodeURIComponent(`[${code}]: Dear parents, ${safeStudentName} School aha nai.Kio aha nai aji amak jonabo..`);
 
   openWhatsApp(cleanStudentPhone, msgForStudent);
 
