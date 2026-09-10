@@ -30,13 +30,13 @@ function sendWhatsAppToBoth(studentPhone, studentName,classname ) {
   const cleanStudentPhone = normalizePhone(studentPhone);
   const cleanPrincipalPhone = normalizePhone(PRINCIPAL_PHONE);
   const safeStudentName = String(studentName || 'student').replace(/\s+/g, ' ').trim();
-  const msgForPrincipal = encodeURIComponent(`[${code}] :Absent alert sent for ${safeStudentName} of ${classname}`);
-  const msgForStudent = encodeURIComponent(`[${code}]: Dear parents, ${safeStudentName} School aha nai.Kio aha nai aji amak jonabo..`);
+  const msgForPrincipal = encodeURIComponent(`[${code}] :Absent alert sent for ${safeStudentName} of class: ${classname}`);
+  const msgForStudent = encodeURIComponent(`[${code}]: Dear parents, ${safeStudentName} is absent.So, we like to know the reason.`);
 
+  // mgs goes to student 1st 
   openWhatsApp(cleanStudentPhone, msgForStudent);
 
-  
-
+//mgs goes to principal sir 2nd
   openWhatsApp(cleanPrincipalPhone, msgForPrincipal);
 }
 

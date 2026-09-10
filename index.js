@@ -55,8 +55,8 @@ elementtwo.classList.add('new');
 teachername.textContent=`Welcome ${nam}`;
 
 
-}else{
-    alert('You are not Authorised to use this System.')
+}else if(!enterv==pass){
+    alert('Invalid Password.')
 }
 
 
