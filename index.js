@@ -133,13 +133,13 @@ if(searchValue==-1){
         alert('No data found');
     }
     if(searchValue==-1){
-     anchor.setAttribute("href",`http://wa.me/+916002976805?text=${code}[Class: Nursery]:Number of Absent students:   out of:  due to:`)   
+     anchor.setAttribute("href",`http://wa.me/+918876079757?text=${code}[Class: Nursery]:Number of Absent students:   out of:  due to:`)   
     }else if(searchValue==-2){
-        anchor.setAttribute("href",`http://wa.me/+916002976805?text=${code}[Class: L.K.G]:Number of Absent students:   out of:  due to:`)
+        anchor.setAttribute("href",`http://wa.me/+918876079757?text=${code}[Class: L.K.G]:Number of Absent students:   out of:  due to:`)
     }else if(searchValue==-3){
-        anchor.setAttribute("href",`http://wa.me/+916002976805?text=${code}[Class: U.K.G]:Number of Absent students:   out of:  due to:`)
+        anchor.setAttribute("href",`http://wa.me/+918876079757?text=${code}[Class: U.K.G]:Number of Absent students:   out of:  due to:`)
     }else{
-     anchor.setAttribute("href",`http://wa.me/+916002976805?text=${code}[Class: ${searchValue}]:Number of Absent students:   out of:  due to:`)
+     anchor.setAttribute("href",`http://wa.me/+918876079757?text=${code}[Class: ${searchValue}]:Number of Absent students:   out of:  due to:`)
 
     }
 
