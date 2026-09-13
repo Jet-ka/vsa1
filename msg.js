@@ -32,7 +32,7 @@ function sendWhatsAppToBoth(studentPhone, studentName,classname ) {
   const safeStudentName = String(studentName || 'student').replace(/\s+/g, ' ').trim();
   const msgForPrincipal = encodeURIComponent(`[${code}] :Absent alert sent for ${safeStudentName} of class: ${classname}`);
   const msgForStudent = encodeURIComponent(`[${code}]:Dear Parents, 
-  ${safeStudentName} is absent today.Could you please let us know the reason for the absence?
+${safeStudentName} is absent today.Could you please let us know the reason for the absence?
   Thank You,
   Vivekananda Science Academy`);
 

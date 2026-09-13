@@ -1,6 +1,6 @@
 export const classi=[
-  {id: 1,name:"Pilkit Ronghang ",phone:"+917086737589 ",class:"1"},
-  {id: 2,name:" Ginisha Puma",phone:"+916003467176 ",class:"1"},
+  {id: 1,name:"Pulkit Ronghang ",phone:"+917086737589 ",class:"1"},
+  {id: 2,name:"Ginisha Puma",phone:"+916003467176 ",class:"1"},
   {id: 3,name:"Marjina Ingti ",phone:"+917002213078 ",class:"1"},
   {id: 4,name:"Tanushree Terang ",phone:"+917002472876 ",class:"1"},
   {id: 5,name:"Joydeep Urang ",phone:"+917896370308 ",class:"1"},
