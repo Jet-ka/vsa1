@@ -56,7 +56,7 @@ teachername.textContent=`Welcome ${nam}`;
 
 
 }else if(!enterv==pass){
-    alert('Invalid Password.')
+   alert('Invalid Password.')
 }
 
 
@@ -103,10 +103,12 @@ ${student.name} is absent today.Could you please let us know the reason for the 
 searchButton.addEventListener('click', () => {
     const searchValue = Number(searchInput.value.trim());
     const passwordValue = passwordInput.value.trim();
-
+if(passwordValue==''){
+    return alert("Apunar Password tu type korok.")
+}
     if (passwordValue !== 'vsa') {
-        alert('Incorrect password');
-        return;
+       return alert('Incorrect Password');
+        
     }
 if(searchValue==-1){
     renderStudents(classnursery)
