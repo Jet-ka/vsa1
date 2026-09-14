@@ -23,7 +23,7 @@ export const classi=[
   {id: 22,name:"Niku Urang ",phone:"+916001889290 ",class:"1"},
   {id: 23,name:"Ayush Biswas ",phone:"+918099485597 ",class:"1"},
   {id: 24,name:"Dristi Tumung ",phone:"+919394630190 ",class:"1"},
-  {id:25,name:"Sudipta Sarma ",phone:"+918822524453 ",class:"1"},
+  {id:25,name:"Sundipta Sarma ",phone:"+918822524453 ",class:"1"},
   {id: 26,name:"Akhil Phnagcho ",phone:"+919387483421 ",class:"1"},
 
 ]

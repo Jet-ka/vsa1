@@ -14,7 +14,7 @@ export const classv=[
   {id: 13,name:"Roselyn Ronghang",phone:"+919612579740 ",class:"5"},
   {id: 14,name:"Satyajeet Lohar",phone:"+919365965429 ",class:"5"},
   {id: 15,name:"Meghna Kathar ",phone:"+916003231654 ",class:"5"},
-  {id: 16,name:"Priyangshi Baishya ",phone:"+919101081676 ",class:"5"},
+  {id: 16,name:"Priyangshi Baishya ",phone:"+917578945718 ",class:"5"},
   {id: 17,name:"Reva Lakshmi Gayan ",phone:"+916002254311 ",class:"5"},
 
 ]

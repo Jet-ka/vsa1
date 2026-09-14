@@ -82,7 +82,12 @@ function renderStudents(students) {
             <td>${student.id}</td>
             <td>${student.name}</td>
             <td><a style="text-decoration:none" href="tel:${student.phone}">${student.phone}</a></td>
-            <td><a href="#" class="whatsapp-link"><i class="bi bi-whatsapp"></i></a></td>
+            <td><a style="text-decoration:none" href="sms:${student.phone}?body=Dear Parents, 
+${student.name} is absent today.Could you please let us know the reason for the absence?
+  Thank You,
+  Vivekananda Science Academy"> <i class="bi bi-chat-text"></i>  </a>
+<td><a href="#" class="whatsapp-link"><i class="bi bi-whatsapp"></i></a></td>
+
         `;
 
         const whatsappLink = row.querySelector('.whatsapp-link');
