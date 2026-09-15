@@ -40,7 +40,8 @@ ${safeStudentName} is absent today.Could you please let us know the reason for t
   openWhatsApp(cleanStudentPhone, msgForStudent);
 
 //mgs goes to principal sir 2nd
-  openWhatsApp(cleanPrincipalPhone, msgForPrincipal);
+ // openWhatsApp(cleanPrincipalPhone, msgForPrincipal); main
+ openWhatsApp(msgForPrincipal)
 }
 
 function sendwhatsapp(studentPhone, studentName, classname) {
