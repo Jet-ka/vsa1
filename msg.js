@@ -23,6 +23,14 @@ function openWhatsApp(number, text) {
     window.location.href = url;
   }
 }
+function openWp(text){
+  const url = `https://wa.me/?text=${text}`;
+  const popup = window.open(url, '_blank', 'noopener,noreferrer');
+
+  if (!popup) {
+    window.location.href = url;
+  } 
+}
 
 
 
@@ -41,7 +49,7 @@ ${safeStudentName} is absent today.Could you please let us know the reason for t
 
 //mgs goes to principal sir 2nd
  // openWhatsApp(cleanPrincipalPhone, msgForPrincipal); main
- openWhatsApp(msgForPrincipal)
+ openWp(msgForPrincipal)
 }
 
 function sendwhatsapp(studentPhone, studentName, classname) {
