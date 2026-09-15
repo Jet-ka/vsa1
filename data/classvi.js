@@ -6,7 +6,7 @@ export const classvi= [
   {id:5, name:"Sanjima Phangsho",phone:"+916901805779",class:"6"},
   {id:6,name:"Doli Terang",phone:"+919365788970",class:"6"},
   {id:7,name:"Arjan caleb kro",phone:"+919957407466",class:"6"},
-   {id:8,name:"Harshita Chetri",phone:"+917002784918",class:"5"},
+   {id:8,name:"Harshita Chetri",phone:"+917002784918",class:"6"},
   {id:9, name:"Simran Chetri",phone:"+918415056415",class:"6"},
   {id:10,name:"Eshan Tumung",phone:"+916001814619",class:"6"},
   {id:11,name:"Jeni Ray",phone:"+919395559479",class:"6"},
