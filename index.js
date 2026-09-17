@@ -52,7 +52,7 @@ const teachername=document.getElementById('teachername')
 
 element.classList.remove('main');
 elementtwo.classList.add('new');
-teachername.textContent=`Welcome ${nam}`;
+teachername.textContent=`Welcome ${nam} 😊`;
 
 
 }else if(!enterv==pass){
