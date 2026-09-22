@@ -13,7 +13,7 @@ import {classx} from './data/classx.js';
 
 // for principal message by teachers 
 const codemgs=["a","b","c","d","e","f","g","h","i","j","k","l","m","n"];
-const randomnumber=Math.floor(Math.random()*14);
+const randomnumber=Math.floor(Math.random()*35);
 const code=codemgs[randomnumber];
 
 
