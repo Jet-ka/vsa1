@@ -11,7 +11,7 @@ export const classv=[
   {id: 10,name:"ArnabJyoti Deka ",phone:"+919365116450 ",class:"5"},
   {id: 11,name:"HirokJyoti Rajbonshi",phone:"+919954608180 ",class:"5"},
   {id: 12,name:"Disha Bordoloi ",phone:"+918133097272 ",class:"5"},
-  {id: 13,name:"Roselyn Ronghang",phone:"+919612579740 ",class:"5"},
+  {id: 13,name:"Roselyn Ronghang",phone:"+919395713249 ",class:"5"},
   {id: 14,name:"Satyajeet Lohar",phone:"+919365965429 ",class:"5"},
   {id: 15,name:"Meghna Kathar ",phone:"+916003231654 ",class:"5"},
   {id: 16,name:"Priyangshi Baishya ",phone:"+917578945718 ",class:"5"},

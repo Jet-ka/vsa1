@@ -14,3 +14,6 @@
     // 3. Open Tab 2: Student / Parent
     window.open(`https://wa.me/${studentPhone}?text=${msgForStudent}`, '_blank');
   }
+
+  //aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces.
+  

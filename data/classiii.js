@@ -8,7 +8,7 @@ export const classiii=[
   {id: 7,name:"Hemprova Basumatary ",phone:"+918011537446 ",class:"3"},
   {id: 8,name:"Hirokjyoti Tumung ",phone:"+916901763206 ",class:"3"},
   {id: 9,name:"Debabrata Boro ",phone:"+916000031243 ",class:"3"},
-  {id: 10,name:"Merilin Ronghang ",phone:"+919612579740 ",class:"3"},
+  {id: 10,name:"Merilin Ronghang ",phone:"+919395713249 ",class:"3"},
   {id: 11,name:"Deigee Rahang ",phone:"+917576805462 ",class:"3"},
   {id: 12,name:"Jonstone Ingti ",phone:"+919394793440 ",class:"3"},
   {id: 13,name:"Neeti Rahnag ",phone:"+918724056427 ",class:"3"},

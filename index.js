@@ -19,6 +19,14 @@ const code=codemgs[randomnumber];
 
 
 
+
+
+
+
+
+
+
+
 // import { info } from './info.js';
 
 
@@ -29,7 +37,11 @@ const searchteacher=document.getElementById('searchteacher');
 
 const passwordteacher=document.getElementById('passwordteacher');
 
-
+// rakhifol value;
+ 
+const rakhiname= document.getElementById("rakhiname");
+const rakhiseebtn=document.getElementById("rakhisee");
+const destiny= document.getElementById("destiny");
 
 //to open page
 const element = document.querySelector('.box');
@@ -140,14 +152,50 @@ if(searchValue==-1){
         alert('No data found');
     }
     if(searchValue==-1){
-     anchor.setAttribute("href",`http://wa.me/+918876079757?text=${code}[Class: Nursery]:Number of Absent students:   out of:  due to:`)   
+     anchor.setAttribute("href",`http://wa.me/?text=${code}[Class: Nursery]:Number of Absent students:   out of:  `)   
     }else if(searchValue==-2){
-        anchor.setAttribute("href",`http://wa.me/+918876079757?text=${code}[Class: L.K.G]:Number of Absent students:   out of:  due to:`)
+        anchor.setAttribute("href",`http://wa.me/?text=${code}[Class: L.K.G]:Number of Absent students:   out of:  `)
     }else if(searchValue==-3){
-        anchor.setAttribute("href",`http://wa.me/+918876079757?text=${code}[Class: U.K.G]:Number of Absent students:   out of:  due to:`)
+        anchor.setAttribute("href",`http://wa.me/?text=${code}[Class: U.K.G]:Number of Absent students:   out of:  `)
     }else{
-     anchor.setAttribute("href",`http://wa.me/+918876079757?text=${code}[Class: ${searchValue}]:Number of Absent students:   out of:  due to:`)
+     anchor.setAttribute("href",`http://wa.me/?text=${code}[Class: ${searchValue}]:Number of Absent students:   out of:  `)
 
     }
 
 });
+
+
+// Rakhi fol start
+rakhiseebtn.addEventListener("click", async function  seerakhi(){
+ try {
+     destiny.textContent="Data is Loading...... ";
+    const rasi= rakhiname.value;
+const url= `https://api.api-ninjas.com/v1/horoscope?zodiac=${rasi}`
+const result= await fetch(url, {
+         method: 'GET',
+        headers: { 'X-Api-Key': 'RuAB9t7d0gjCM9y41rLHIK3hbNzYQbEY0h5gLs8o',},
+      
+       contentType: 'application/json', // Instructs server on the data format
+      //  cache: "no-store",
+    });
+
+    if(result.status != 200){
+        //alert("Wrong Data")
+       return destiny.textContent="Data is not Loading."
+    }
+ const data = await result.json();
+
+  destiny.textContent=data.horoscope;
+
+ }catch{
+ destiny.textContent="System Error"
+//alert(" Error")
+ }
+  
+})
+
+
+
+ 
+
+//Rakhi fol end
