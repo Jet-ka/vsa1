@@ -125,3 +125,27 @@ body{
 .rakhiboxminor{
     width:200px;
 }
+
+#ani{
+    text-align: center;
+    animation: ani 4s 2;
+}
+
+@keyframes ani {
+    0%{opacity:0;transform:scale(0.1);}
+    /* 25%{opacity:0.2; tranform:scale(0.2)}
+    50%{opacity: 0.5; transform: scale(0.6);}
+     75%{opacity:0.7;transform:scale(0.7)} */
+    100%{opacity: 1;transform: scale(1); font-weight: bolder;}
+}
+
+/* @keyframes ani {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
