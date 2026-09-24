@@ -128,7 +128,7 @@ body{
 
 #ani{
     text-align: center;
-    animation: ani 4s 2;
+    animation: ani 4s 3;
 }
 
 @keyframes ani {
