@@ -10,7 +10,7 @@ export const classiii=[
   {id: 9,name:"Debabrata Boro ",phone:"+916000031243 ",class:"3"},
   {id: 10,name:"Merilin Ronghang ",phone:"+919395713249 ",class:"3"},
   {id: 11,name:"Deigee Rahang ",phone:"+917576805462 ",class:"3"},
-  {id: 12,name:"Jonstone Ingti ",phone:"+919394793440 ",class:"3"},
+  {id: 12,name:"Jonstone Ingti ",phone:"+919394973440 ",class:"3"},
   {id: 13,name:"Neeti Rahnag ",phone:"+918724056427 ",class:"3"},
   {id: 14,name:"Arman Bajgain ",phone:"+918473042734 ",class:"3"},
   {id: 15,name:"Sneha Bora ",phone:"+919706656418 ",class:"3"},

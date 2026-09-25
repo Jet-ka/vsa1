@@ -1,7 +1,7 @@
 export const classlkg=[
   {id: 1,name:"Yana Mirdon kro ",phone:"+919957407466 ",class:"L.K.G"},
   {id: 2,name:"Anaam Asad ",phone:"+919864309719 ",class:"L.K.G"},
-  {id: 3,name:"Joy Boro ",phone:"+91 ",class:"L.K.G"},
+  {id: 3,name:"Joy Boro ",phone:"+916900960225 ",class:"L.K.G"},
   {id: 4,name:"Junali Basumatary ",phone:"+919365509663 ",class:"L.K.G"},
   {id: 5,name:"Kuldip Urang ",phone:"+916900478117 ",class:"L.K.G"},
   {id: 6,name:"Hitesh Luhar ",phone:"+916001458088 ",class:"L.K.G"},
