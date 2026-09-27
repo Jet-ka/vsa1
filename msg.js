@@ -4,7 +4,8 @@ const codemgs=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","
 const randomnumber=Math.floor(Math.random()*26);
 const code=codemgs[randomnumber];
 
-
+  const d = new Date();
+  const result= d.toDateString();
 
 
 
@@ -38,7 +39,7 @@ function sendWhatsAppToBoth(studentPhone, studentName,classname ) {
   const cleanStudentPhone = normalizePhone(studentPhone);
   const cleanPrincipalPhone = normalizePhone(PRINCIPAL_PHONE);
   const safeStudentName = String(studentName || 'student').replace(/\s+/g, ' ').trim();
-  const msgForPrincipal = encodeURIComponent(`[${code}] :Absent alert sent for ${safeStudentName} of class: ${classname}`);
+  const msgForPrincipal = encodeURIComponent(`[${code}][Date: ${result}] :Absent alert sent for ${safeStudentName} of class: ${classname}`);
   const msgForStudent = encodeURIComponent(`[${code}]:Dear Parents, 
 ${safeStudentName} is absent today.Could you please let us know the reason for the absence?
   Thank You,
