@@ -1,7 +1,7 @@
 export const classix=[
   {id: 1,name:"Nabanita Kro ",phone:"+919395551355 ",class:"9"},
   {id: 2,name:"Anu Baruah",phone:"+918811825469 ",class:"9"},
-  {id: 3,name:"Shivani Kumari ",phone:"+919543171546 ",class:"9"},
+  {id: 3,name:"Shivani Kumari ",phone:"+919534171546 ",class:"9"},
   {id: 4,name:"Pradip Dhakal",phone:"+917663028949 ",class:"9"},
   {id: 5,name:"Ankur Baruah",phone:"+916003215684 ",class:"9"},
   {id: 6,name:"Chikem Ronghang",phone:"+917086843819 ",class:"9"},

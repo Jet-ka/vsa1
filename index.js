@@ -115,11 +115,11 @@ ${student.name} is absent today.Could you please let us know the reason for the 
 searchButton.addEventListener('click', () => {
     const searchValue = Number(searchInput.value.trim());
     const passwordValue = passwordInput.value.trim();
-if(passwordValue==''){
-    return alert("Apunar Password tu type korok.")
-}
-    if (passwordValue !== 'vsa') {
-       return alert('Incorrect Password');
+ if(passwordValue==''){
+     return alert("Apunar Password tu type korok.")
+ }
+     if (passwordValue !== 'vsa') {
+        return alert('Incorrect Password');
         
     }
 if(searchValue==-1){
