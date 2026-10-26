@@ -16,7 +16,7 @@ export const classlkg=[
   {id: 15,name:"Dipandita Rahang ",phone:"+919101951282 ",class:"L.K.G"},
   {id: 16,name:"Subhrajit Keleng ",phone:"+919957746915 ",class:"L.K.G"},
   {id: 17,name:"Dipika Rajbongshi ",phone:"+916003050452 ",class:"L.K.G"},
-  {id: 18,name:"Pritam Das ",phone:"+916901685507 ",class:"L.K.G"},
+  {id: 18,name:"Pritam Das ",phone:"+919395028950 ",class:"L.K.G"},
   {id: 19,name:"Progyan Choudhury ",phone:"+919706977428 ",class:"L.K.G"},
   {id: 20,name:"Liton Ingti ",phone:"+918011414050 ",class:"L.K.G"},
   {id: 21,name:"Aisha Ronghang ",phone:"+918099070252 ",class:"L.K.G"},
