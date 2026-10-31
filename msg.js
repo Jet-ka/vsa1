@@ -32,7 +32,7 @@ localStorage.setItem("name", JSON.stringify(existingData));
  
 // 6. Sync your local 'informations' array if needed
 informations.push(studentname);
-  if (!popup) {
+   if (!popup) {
     window.location.href = url;
   }
 }

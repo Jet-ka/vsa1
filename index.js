@@ -47,6 +47,7 @@ const destiny= document.getElementById("destiny");
 //to open page
 const element = document.querySelector('.box');
 const elementtwo=document.querySelector('.loginbox');
+const elementhree=document.getElementById("elthree");
 const verifybutton=document.getElementById('verify');
 
 verifybutton.addEventListener('click', function(){
@@ -65,6 +66,7 @@ const teachername=document.getElementById('teachername')
 
 element.classList.remove('main');
 elementtwo.classList.add('new');
+elementhree.style.display="none";
 teachername.textContent=`Welcome ${nam} 😊`;
 
 
@@ -198,7 +200,7 @@ anchor.setAttribute("href", `https://wa.me/?text=${encodeURIComponent(message)}`
 
 // anchor.setAttribute("href", `https://wa.me/?text=${encodeURIComponent(message)}`);
 if(informations.length==0){
-  return  alert("Please send message to your students first")
+  return  alert("Message bur di louk tar pisot saved koribo sir k dibo")
 }
    alert(informations + " is/are saved");
 })

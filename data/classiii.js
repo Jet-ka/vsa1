@@ -13,7 +13,7 @@ export const classiii=[
   {id: 12,name:"Jonstone Ingti ",phone:"+919394973440 ",class:"3"},
   {id: 13,name:"Neeti Rahnag ",phone:"+918724056427 ",class:"3"},
   {id: 14,name:"Arman Bajgain ",phone:"+918473042734 ",class:"3"},
-  {id: 15,name:"Sneha Bora ",phone:"+919706656418 ",class:"3"},
+  {id: 15,name:"Sneha Boro ",phone:"+919706656418 ",class:"3"},
   {id: 16,name:"Ishita Karmakar ",phone:"+919394724836 ",class:"3"},
   {id: 17,name:"Rani Mandal ",phone:"+919365807266 ",class:"3"},
 
