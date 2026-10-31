@@ -3,20 +3,7 @@ body{
     font-family: sans-serif;
 }
 
-.box1{
-    display:flex;
-    justify-content:center;
-    text-align:center;
-    flex-direction:column;
-    background-color: rgb(110, 6, 136);
-    color:white;
-    height:150px;
-    opacity:0.9;
-}
-.box1>h5{
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-}
+
 
 .box2{
     /* border: 1px solid #d61d1d; */

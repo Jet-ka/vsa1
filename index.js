@@ -12,10 +12,11 @@ import {classix} from './data/classix.js';
 import {classx} from './data/classx.js';
 
 // for principal message by teachers 
-const codemgs=["a","b","c","d","e","f","g","h","i","j","k","l","m","n"];
-const randomnumber=Math.floor(Math.random()*14);
+const codemgs=["a","b","c","d"];
+const randomnumber=Math.floor(Math.random()*4);
 const code=codemgs[randomnumber];
-
+const d = new Date();
+const resultd= d.toDateString();
 
 
 
@@ -49,8 +50,8 @@ const elementtwo=document.querySelector('.loginbox');
 const verifybutton=document.getElementById('verify');
 
 verifybutton.addEventListener('click', function(){
-    const enterv=passwordteacher.value;
-    const nam=searchteacher.value;
+    const enterv=passwordteacher.value.trim();
+    const nam=searchteacher.value.trim();
     if(nam=='' ){
      return   alert('Apunar nam tu type korok..');
         
@@ -67,7 +68,7 @@ elementtwo.classList.add('new');
 teachername.textContent=`Welcome ${nam} 😊`;
 
 
-}else if(!enterv==pass){
+}else{
    alert('Invalid Password.')
 }
 
@@ -114,6 +115,7 @@ ${student.name} is absent today.Could you please let us know the reason for the 
 
 searchButton.addEventListener('click', () => {
     const searchValue = Number(searchInput.value.trim());
+    localStorage.setItem("cls",searchValue)
     const passwordValue = passwordInput.value.trim();
  if(passwordValue==''){
      return alert("Apunar Password tu type korok.")
@@ -122,6 +124,8 @@ searchButton.addEventListener('click', () => {
         return alert('Incorrect Password');
         
     }
+    localStorage.removeItem("name");
+    informations.length=0;
 if(searchValue==-1){
     renderStudents(classnursery)
 }
@@ -151,18 +155,53 @@ if(searchValue==-1){
     else {
         alert('No data found');
     }
-    if(searchValue==-1){
-     anchor.setAttribute("href",`http://wa.me/?text=${code}[Class: Nursery]:Number of Absent students:   out of:  `)   
-    }else if(searchValue==-2){
-        anchor.setAttribute("href",`http://wa.me/?text=${code}[Class: L.K.G]:Number of Absent students:   out of:  `)
-    }else if(searchValue==-3){
-        anchor.setAttribute("href",`http://wa.me/?text=${code}[Class: U.K.G]:Number of Absent students:   out of:  `)
-    }else{
-     anchor.setAttribute("href",`http://wa.me/?text=${code}[Class: ${searchValue}]:Number of Absent students:   out of:  `)
+  
+//     if(searchValue==-1){
+//      anchor.setAttribute("href",`http://wa.me/?text=${code}[Class: Nursery]:Number of Absent students:   out of:  `)   
+//     }else if(searchValue==-2){
+//         anchor.setAttribute("href",`http://wa.me/?text=${code}[Class: L.K.G]:Number of Absent students:   out of:  `)
+//     }else if(searchValue==-3){
+//         anchor.setAttribute("href",`http://wa.me/?text=${code}[Class: U.K.G]:Number of Absent students:   out of:  `)
+//     }else{
+//  const item= JSON.parse(localStorage.getItem("name"));
 
-    }
+
+//     anchor.setAttribute("href",`http://wa.me/?text=${code}[Class: ${searchValue}]:${item.join(",")}Number of Absent students:   out of:  `)
+
+//     }
 
 });
+
+
+const getstu= document.getElementById("getstu");
+getstu.addEventListener("click", async function (){
+    const items= localStorage.getItem("cls");
+    if(items==-1){
+         const message = `[${code}][Nursery][${resultd}] ${informations.join(", ")} is/are absent today.. `;
+
+anchor.setAttribute("href", `https://wa.me/?text=${encodeURIComponent(message)}`);  
+    }else if(items==-2){
+           const message = `[${code}][L.K.G][${resultd}]${informations.join(", ")} is/are absent today.. `;
+
+anchor.setAttribute("href", `https://wa.me/?text=${encodeURIComponent(message)}`);
+    }else if(items==-3){
+           const message = `[${code}][U.K.G][${resultd}] ${informations.join(", ")} is/are absent today.. `;
+
+anchor.setAttribute("href", `https://wa.me/?text=${encodeURIComponent(message)}`);
+    }else{
+           const message = `[${code}][${items}][${resultd}] ${informations.join(", ")} is/are absent today.. `;
+
+anchor.setAttribute("href", `https://wa.me/?text=${encodeURIComponent(message)}`);
+    }
+//     const item= JSON.parse(localStorage.getItem("name"));
+//    const message = `[${code}][${items}] ${informations.join(", ")} are absent today.. `;
+
+// anchor.setAttribute("href", `https://wa.me/?text=${encodeURIComponent(message)}`);
+if(informations.length==0){
+  return  alert("Please send message to your students first")
+}
+   alert(informations + " is/are saved");
+})
 
 
 // Rakhi fol start

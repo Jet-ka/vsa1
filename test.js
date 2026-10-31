@@ -17,3 +17,6 @@
 
   //aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces.
   
+//   const d = new Date();
+// document.getElementById("demo").innerHTML = d.toDateString();
+//  sat sep 26 2026
