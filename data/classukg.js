@@ -10,8 +10,8 @@ export const classukg=[
   {id: 9,name:"Gargi Terang ",phone:"+917636026468 ",class:"U.K.G"},
   {id: 10,name:"Mousumi Phangcho ",phone:"+916901805779 ",class:"U.K.G"},
   {id: 11,name:"Angkur Phangcho ",phone:"+919387483421 ",class:"U.K.G"},
-  {id: 12,name:"Gunjan Biswas ",phone:"+917002212986 ",class:"U.K.G"},
-  {id: 13,name:"Rajveer Deka ",phone:"+919707709887 ",class:"U.K.G"},
+  
+  {id: 12,name:"Rajveer Deka ",phone:"+919707709887 ",class:"U.K.G"},
 
 
 ]
