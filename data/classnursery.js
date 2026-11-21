@@ -12,13 +12,13 @@ export const classnursery=[
   {id: 11,name:"Shreeyansh Shiva ",phone:"+919101575217 ",class:"Nursery"},
   {id: 12,name:"Jesse Ingjal ",phone:"+916000141504 ",class:"Nursery"},
   {id: 13,name:"Anuska Teronpi ",phone:"+919101542853 ",class:"Nursery"},
-  {id: 14,name:"Benisha Borah ",phone:"+918638969743 ",class:"Nursery"},
-  {id: 15,name:"Tanushree Rahang ",phone:"+916901763540 ",class:"Nursery"},
-  {id: 16,name:"Jyotishman Boro ",phone:"+918486166173 ",class:"Nursery"},
-  {id: 17,name:"Evan Boro ",phone:"+918876841264 ",class:"Nursery"},
-  {id: 18,name:"Eshwav Rajbongshi ",phone:"+919957402149 ",class:"Nursery"},
-  {id: 19,name:"Dikshita Kathar ",phone:"+919864400544 ",class:"Nursery"},
-  {id: 20,name:"Jiya Rahang ",phone:"+919365358055 ",class:"Nursery"},
-  {id: 21,name:"Eshita Ronghang ",phone:"+917086843819 ",class:"Nursery"},
+  
+  {id: 14,name:"Tanushree Rahang ",phone:"+916901763540 ",class:"Nursery"},
+  {id: 15,name:"Jyotishman Boro ",phone:"+918486166173 ",class:"Nursery"},
+  {id: 16,name:"Evan Boro ",phone:"+918876841264 ",class:"Nursery"},
+  {id: 17,name:"Eshwav Rajbongshi ",phone:"+919957402149 ",class:"Nursery"},
+  {id: 18,name:"Dikshita Kathar ",phone:"+919864400544 ",class:"Nursery"},
+  {id: 19,name:"Jiya Rahang ",phone:"+919365358055 ",class:"Nursery"},
+  {id: 20,name:"Eshita Ronghang ",phone:"+917086843819 ",class:"Nursery"},
 
 ]

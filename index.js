@@ -118,14 +118,23 @@ ${student.name} is absent today.Could you please let us know the reason for the 
 searchButton.addEventListener('click', () => {
     const searchValue = Number(searchInput.value.trim());
     localStorage.setItem("cls",searchValue)
-    const passwordValue = passwordInput.value.trim();
- if(passwordValue==''){
-     return alert("Apunar Password tu type korok.")
- }
-     if (passwordValue !== 'vsa') {
-        return alert('Incorrect Password');
-        
-    }
+   // const passwordValue = passwordInput.value.trim();
+//  if(passwordValue==''){
+//      return alert("Apunar Password tu type korok.")
+//  }
+//      if (passwordValue !== 'vsa') {
+//         return alert('Incorrect Password');       
+//     }
+if(searchValue==-1){
+    alert("Tolot class Nursery students r details pabo..")
+} else if(searchValue==-2){
+    alert('Tolot class L.K.G students r details pabo..')
+}else if(searchValue==-3){
+    alert("Tolot class U.K.G students r details pabo..")
+}else{
+alert(`Tolot class ${searchValue} students r details pabo..`)
+}
+
     localStorage.removeItem("name");
     informations.length=0;
 if(searchValue==-1){
